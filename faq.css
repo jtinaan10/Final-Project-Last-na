@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    
+  }
+  body{
+    font-family: sans-serif;
+  }
+  .navbar-brand{
+    left: 0px;
+    position: right;
+  
+  }
+  .video-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+  .navbar-brand {
+  color: black;
+  position: fixed;
+  }
+  .navbar {
+  color: black;
+  font-size: large;
+  font-weight: 400;
+  margin-top: 10px;
+  position: fixed;
+  }
+  .navbar-toggler {
+  border: none;
+  font-size: 1.25rem;
+  position: right;
+  
+  }
+  .navbar-toggler:focus, .btn-close:focus{
+  box-shadow: none;
+  outline: none;
+  }
+  
+  .nav-link, .nav-link.active{
+  color: black;
+  font-weight: 600;
+  position: relative;
+  }
+  
+  .nav-link:hover {
+  color: #ffb727;
+  }
+  
+  .nav-link::before {
+  content: "";
+  position: relative;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background-color: black;
+  visibility: hidden;
+  transition: 0.3s ease-in-out;
+  }
+  
+  .nav-link::before, .nav-link.active::before {
+  width: 100%;
+  visibility: visible;
+  }
+  .dropdown_menu {
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease;
+    transform: perspective(1000px) rotateY(-90deg);
+    backface-visibility: hidden;
+    position: relative;
+  }
+  
+  .dropdown_menu.open {
+    transform: perspective(1000px) rotateY(0deg);
+    position: relative;
+  }
+  
+  
+  .toggle_btn {
+    transition: transform 0.5s ease;
+    position: relative;
+  }
+  
+  .toggle_btn.open {
+    transform: rotate(180deg);
+    position: relative;
+  }
+  <!-------------- END NAVBAR ------------->
+ .faq section {
+    position: relative;
+    justify-content: center ;
+    margin-top: 10%;
+
+ }
+ .section-title {
+    position: relative;
+    margin-top: 10%;
+    margin-bottom: 2%;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 19px;
+    color: #ffb727;
+  }
+  .accordion-item, .accordion-header{
+    background-color: #ffb727;
+    margin-bottom: .5%;
+    
+  }
+.accordion-body {
+    position: relative;
+    color: Black;
+    background-color: #E7D889;
+}
+.accordion-button {
+    background-color: #ffb727;
+    font-size: large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 2%;
+}
+.accordion-button:hover {
+    background-color: rgb(220,220,220);
+}

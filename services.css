@@ -1,0 +1,202 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  
+}
+body{
+  font-family: sans-serif;
+}
+.navbar-brand{
+  left: 0px;
+  position: right;
+
+}
+.video-bg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+.navbar-brand {
+color: black;
+position: fixed;
+}
+.navbar {
+color: black;
+font-size: large;
+font-weight: 400;
+margin-top: 10px;
+position: fixed;
+}
+.navbar-toggler {
+border: none;
+font-size: 1.25rem;
+position: right;
+
+}
+.navbar-toggler:focus, .btn-close:focus{
+box-shadow: none;
+outline: none;
+}
+
+.nav-link, .nav-link.active{
+color: black;
+font-weight: 600;
+position: relative;
+}
+
+.nav-link:hover {
+color: #ffb727;
+}
+
+.nav-link::before {
+content: "";
+position: relative;
+bottom: 0;
+left: 50%;
+transform: translateX(-50%);
+width: 0;
+height: 2px;
+background-color: black;
+visibility: hidden;
+transition: 0.3s ease-in-out;
+}
+
+.nav-link::before, .nav-link.active::before {
+width: 100%;
+visibility: visible;
+}
+.dropdown_menu {
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease;
+  transform: perspective(1000px) rotateY(-90deg);
+  backface-visibility: hidden;
+  position: relative;
+}
+
+.dropdown_menu.open {
+  transform: perspective(1000px) rotateY(0deg);
+  position: relative;
+}
+
+
+.toggle_btn {
+  transition: transform 0.5s ease;
+  position: relative;
+}
+
+.toggle_btn.open {
+  transform: rotate(180deg);
+  position: relative;
+}
+<!-------------- END NAVBAR ------------->
+
+.conatiner{
+  margin-top: 80px;
+  position: relative;
+
+}
+.section-title {
+  position: relative;
+  margin-top: 10%;
+  font-weight: 700;
+  text-align: center;
+  padding-bottom: 19px;
+  color:#ffb727;
+}
+
+.fa-solid {
+  align-items: center;
+  
+}
+
+.services .icon-box {
+  text-align: center;
+  background: rgb(220,220,220);
+  padding: 80px 20px;
+  transition: all ease-in-out 0.3s;
+  position: relative;
+  border-top: #E7D889;
+}
+
+.services .icon-box .icon {
+  margin: 0 auto;
+  width: 64px;
+  height: 64px;
+  background: #ffb727;
+  border-radius: 5px;
+  transition: all 0.3s ease-out 0s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.services .icon-box .icon i {
+  color: black;
+  font-size: 28px;
+  position: relative;
+}
+
+.services .icon-box .icon::before {
+  position: relative;
+  content: "";
+  left: -8px;
+  top: -8px;
+  height: 100%;
+  width: 100%;
+  background: rgb(192,192,192);
+  border-radius: 5px;
+  transition: all 0.3s ease-out 0s;
+  transform: translateZ(-1px);
+}
+
+.services .icon-box h4 {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 24px;
+  position: relative;
+}
+
+.services .icon-box h4 a {
+  color: black;
+  position: relative;
+}
+
+.services .icon-box p {
+  line-height: 24px;
+  font-size: 16px;
+  margin-bottom: 0;
+  position: relative;
+}
+
+.services .icon-box:hover {
+  background: #ffb727;
+  border-color: #ffb727;
+  position: relative;
+}
+
+.services .icon-box:hover .icon {
+  background: #fff;
+  position: relative;
+}
+
+.services .icon-box:hover .icon i {
+  color: #ffb727;
+  position: relative;
+}
+
+.services .icon-box:hover .icon::before {
+  background: #E7D889;
+  position: relative;
+}
+
+.services .icon-box:hover h4 a,
+.services .icon-box:hover p {
+  color: #fff;
+  position: relative;
+}

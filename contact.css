@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    
+}
+body{
+    font-family: sans-serif;
+}
+.navbar-brand{
+    left: 0px;
+    position: right;
+
+}
+.video-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+.navbar-brand {
+  color: black;
+  position: fixed;
+}
+.navbar {
+  color: black;
+  font-size: large;
+  font-weight: 400;
+  margin-top: 10px;
+  position: fixed;
+}
+.navbar-toggler {
+  border: none;
+  font-size: 1.25rem;
+  position: right;
+
+}
+.navbar-toggler:focus, .btn-close:focus{
+  box-shadow: none;
+  outline: none;
+}
+
+.nav-link, .nav-link.active{
+  color: #666777;
+  font-weight: 600;
+  position: relative;
+}
+
+.nav-link:hover {
+  color:black;
+}
+
+.nav-link::before {
+  content: "";
+  position: relative;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background-color: black;
+  visibility: hidden;
+  transition: 0.3s ease-in-out;
+}
+
+.nav-link::before, .nav-link.active::before {
+  width: 100%;
+  visibility: visible;
+}
+.dropdown_menu {
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease;
+  transform: perspective(1000px) rotateY(-90deg);
+  backface-visibility: hidden;
+  position: relative;
+}
+
+.dropdown_menu.open {
+  transform: perspective(1000px) rotateY(0deg);
+  position: relative;
+}
+
+
+.toggle_btn {
+  transition: transform 0.5s ease;
+  position: relative;
+}
+
+.toggle_btn.open {
+  transform: rotate(180deg);
+  position: relative;
+}
+<!-------------- END NAVBAR ------------->
+
+.container {
+  width: 100%;
+  height: 100vh;
+  padding-left: 8%;
+  padding-right: 8%;
+  box-sizing: border-box;
+  position: relative;
+  align-items: center;
+  margin-top: 20%;
+}
+
+
+h1 {
+  color: #ffb727;
+  position: relative;
+  text-align: center;
+  margin-top: 20%;
+}
+h2 {
+  color: #ffb727;
+  position: relative;
+  text-align: center;
+}
+
+p {
+  color: #666;
+  position: relative;
+  text-align: center;
+}
+
+.home-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ffb727;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  position: relative;
+  text-align: center;
+  align-items: center;
+  margin-left: 48%;
+}
+
+
+.home-button:hover {
+  background-color: #E7D889;
+  position: relative;
+  align-items: center;
+}
